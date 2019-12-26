@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap2 {
+    display: none;
+}
+
+.z0 {
+    display: none;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-h1 {
+    text-align: center;
+    line-height: 10vh;
+    width: 100%;
+    flex-basis: 10%;
+}
+
+.img {
+    width: 95%;
+    flex-basis: 60%;
+    background-image: url(../img/dzien1.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.menu>div {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 7vh;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex-basis: 23vw;
+}
+
+.menu>div:hover {
+    background-color: #179fc3;
+    cursor: pointer;
+}
+
+
+
+div.menu.opcja {
+    display: none;
+}
+
+div.wrap2.opcja {
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+}
+
+.wrap2.opcja>.burger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    opacity: 0.8;
+}
+
+div.menu.burger {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    justify-content: center;
+}
+
+div.menu.burger>div {
+    width: 80vw;
+    flex-basis: 8vh;
+    margin: 3px 0;
+}
+
+
+div.wrap2.opcja>h1 {
+    margin: 5px auto;
+}
+
+div.wrap2.opcja>p {
+    font-size: 16px;
+    margin: 5px 30px;
+}
+
+div.wrap2.opcja>div.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    justify-content: center;
+}
+
+div.wrap2.opcja>div.galeria>div {
+    width: 90vw;
+    height: 90vw;
+    margin: 5px;
+    border: 1px solid black;
+    background-position: center bottom;
+    background-size: cover;
+
+}
+
+@media (min-width: 600px) {
+
+    .wrap2.opcja>.burger {
+        display: none;
+    }
+
+    .wrap {
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .wrap2 {
+        display: none;
+    }
+
+    .img {
+        flex-basis: 40%;
+        height: 70vh;
+        border: 1px solid black;
+        justify-items: left;
+        overflow: hidden;
+        background-image: url(../img/dzien1.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        animation: dzien 4s linear infinite;
+
+    }
+
+    .img-h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 40%;
+        align-self: flex-start;
+        color: black;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 15vh;
+        letter-spacing: 10px;
+        animation: text 4s linear infinite;
+
+    }
+
+    .menu {
+        flex-basis: 47%;
+        height: 98%;
+        position: relative;
+        text-align: center;
+    }
+
+    .menu>div {
+        position: absolute;
+        height: 10vh;
+        width: 15vw;
+        left: 0;
+        top: 0;
+        line-height: 10vh;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+
+    div.z0 {
+        display: none;
+    }
+
+    div.z1 {
+        left: 15%;
+        top: 10%;
+    }
+
+    div.z2 {
+        left: 30%;
+        top: 25%;
+    }
+
+    div.z3 {
+        left: 45%;
+        top: 40%;
+    }
+
+    div.z4 {
+        left: 60%;
+        top: 55%;
+    }
+
+    div.z5 {
+        left: 5%;
+        top: 45%;
+    }
+
+    div.z6 {
+        left: 20%;
+        top: 60%;
+    }
+
+    div.z7 {
+        left: 40%;
+        top: 75%;
+    }
+
+
+    .wrap2>h1 {
+        /* margin-bottom: 10px; */
+        height: 7vh;
+        /**/
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .wrap2>p {
+        height: 20vh;
+    }
+
+    .wrap2>div.galeria {
+        display: flex;
+        height: 60vh;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+
+    div.wrap>div.wrap2>div.galeria>div {
+        width: 15vw;
+        height: 15vw;
+        border: 2px solid #179fc3;
+    }
+
+    .galeria>div {
+        background-size: cover;
+    }
+
+    div.menu.opcja>div {
+        position: static;
+        left: auto;
+        top: auto;
+        flex-basis: 12vw;
+    }
+
+    div.menu.opcja {
+        display: flex;
+
+    }
+
+
+
+}
+
+@keyframes dzien {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 0;
+    }
+
+    18% {
+        opacity: 1;
+    }
+
+    82% {
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
