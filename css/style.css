@@ -104,7 +104,6 @@ div.menu.burger>div {
 
 
 div.wrap2.opcja>h1 {
-    /* margin: 5px auto; */
     margin: 10px 5px;
 }
 
@@ -287,12 +286,10 @@ div.wrap2.opcja>div.galeria>div {
 
 
     div.wrap2>h1.h1 {
-        /* margin-bottom: 10px; */
         width: 70vw;
         height: 10vh;
         line-height: 10vh;
         margin: 0 46px;
-        /**/
     }
 
     .burger {

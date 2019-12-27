@@ -1,15 +1,12 @@
-//Parametry
 let aktywnyElement = 0;
 const czasZmiany = 4000;
 let aktualneZdjęcie = 0;
 let numerDnia;
-// Pobieramy 4 elementy na których pracujemy
+
 const img = document.querySelector(".img");
 const h1 = document.querySelector(".img-h1");
 const divOpcja = document.querySelectorAll(".menu div");
 
-
-//Informacje w tablicach o elementach podmienianych
 const pliki = ["img/dzien1.jpg", "img/dzien2.jpg", "img/dzien3.jpg",
   "img/dzien4.jpg", "img/dzien5.jpg", "img/dzien6.jpg", "img/dzien7.jpg"
 ];
