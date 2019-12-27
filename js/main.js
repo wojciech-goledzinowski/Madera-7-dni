@@ -46,7 +46,7 @@ function dzien() {
   numerDnia = this.textContent.charAt(this.textContent.length - 1);
   let pozycja = this.textContent;
   if (pozycja == "start") {
-    setTimeout("location.href='http://www.kosiarzumyslow.pl/js3';", 100);
+    setTimeout("location.href='https://wojciech-goledzinowski.github.io/Madera-7-dni/';", 100);
     return;
   }
 
