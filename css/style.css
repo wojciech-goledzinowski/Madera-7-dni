@@ -5,6 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.pokaz {
+    display: none;
+}
+
+
+
 .wrap2 {
     display: none;
 }
@@ -97,12 +103,13 @@ div.menu.burger>div {
 
 
 div.wrap2.opcja>h1 {
-    margin: 5px auto;
+    /* margin: 5px auto; */
+    margin: 10px 5px;
 }
 
 div.wrap2.opcja>p {
     font-size: 16px;
-    margin: 5px 30px;
+    margin: 10px 5px;
 }
 
 div.wrap2.opcja>div.galeria {
@@ -123,6 +130,52 @@ div.wrap2.opcja>div.galeria>div {
 }
 
 @media (min-width: 600px) {
+
+
+    .pokaz.activ {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 2.5vh 12.5vw;
+        background-color: black;
+        width: 75vw;
+        height: 95vh;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 2px solid rgb(30, 30, 31);
+    }
+
+    .pokaz.activ .fa-angle-left {
+        position: fixed;
+        font-size: 50px;
+        top: calc(50% - 25px);
+        left: 13.5vw;
+        color: white;
+    }
+
+    .pokaz.activ .fa-angle-right {
+        position: fixed;
+        font-size: 50px;
+        top: calc(50% - 25px);
+        right: 12.5vw;
+        color: white;
+    }
+
+    .pokaz.activ .fa-times-circle {
+        position: fixed;
+        font-size: 50px;
+        top: 0;
+        right: 7vw;
+        color: black;
+        background-color: white;
+
+    }
+
+    .wrap.activ {
+        filter: blur(5px);
+    }
 
     .wrap2.opcja>.burger {
         display: none;
@@ -190,6 +243,8 @@ div.wrap2.opcja>div.galeria>div {
     }
 
 
+
+
     div.z0 {
         display: none;
     }
@@ -230,9 +285,12 @@ div.wrap2.opcja>div.galeria>div {
     }
 
 
-    .wrap2>h1 {
+    div.wrap2>h1.h1 {
         /* margin-bottom: 10px; */
-        height: 7vh;
+        width: 70vw;
+        height: 10vh;
+        line-height: 10vh;
+        margin: 0 46px;
         /**/
     }
 
@@ -240,17 +298,22 @@ div.wrap2.opcja>div.galeria>div {
         display: none;
     }
 
-    .wrap2>p {
-        height: 20vh;
+    body div.wrap2>p.p {
+        height: 15vh;
+        margin-top: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+
     }
 
     .wrap2>div.galeria {
         display: flex;
-        height: 60vh;
-        margin-top: 10px;
+        height: 75vh;
+        margin-top: -20px;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: space-around;
+        align-content: center;
+
     }
 
     div.wrap>div.wrap2>div.galeria>div {
@@ -275,6 +338,27 @@ div.wrap2.opcja>div.galeria>div {
 
     }
 
+    @media (max-height: 550px) {
+        div.wrap>div.menu {
+            font-size: 10px;
+        }
+
+        div.wrap>div.wrap2>div.galeria>div {
+
+            width: 20vh;
+            height: 20vh;
+
+
+        }
+
+        body div.wrap2>p.p {
+            font-size: 12px;
+        }
+
+        div.wrap2>h1.h1 {
+            font-size: 20px;
+        }
+    }
 
 
 }

@@ -63,9 +63,26 @@ function dzien() {
   console.log(this);
 }
 
+function pokaz() {
+  console.log(this);
+  document.querySelector('.wrap').classList.add('activ');
+  document.querySelector('.pokaz').classList.add('activ');
+  document.querySelector('.pokaz').style.backgroundImage = this.style.backgroundImage.replace('mini', 'img');
+}
+
+function zamknij() {
+  console.log(this);
+  document.querySelector('.wrap').classList.remove('activ');
+  document.querySelector('.pokaz').classList.remove('activ');
+}
+
 let animacja = setInterval(zmiannyElementu, czasZmiany);
 divOpcja.forEach(e => e.addEventListener("click", dzien));
 
 document.querySelector('.burger').addEventListener('click', e => {
   document.querySelector('.menu').classList.toggle('burger');
 });
+
+document.querySelectorAll('.galeria div').forEach(e => e.addEventListener('click', pokaz));
+
+document.querySelector('.fa-times-circle').addEventListener('click', zamknij);
